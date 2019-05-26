@@ -4,7 +4,6 @@ import (
 	"image"
 	"image/color"
 	"sync"
-
 	"github.com/aarzilli/nucular/command"
 	"github.com/aarzilli/nucular/internal/assets"
 	"github.com/aarzilli/nucular/label"
@@ -119,18 +118,18 @@ type Button struct {
 	Padding           image.Point
 	ImagePadding      image.Point
 	TouchPadding      image.Point
-	DrawBegin         func(*command.Buffer)
+	DrawBegin         func(*command.Buffer) `json:"-"`
 	Draw              CustomButtonDrawing
-	DrawEnd           func(*command.Buffer)
+	DrawEnd           func(*command.Buffer) `json:"-"`
 	SymbolBorderWidth int
 }
 
 type CustomButtonDrawing struct {
-	ButtonText       func(*command.Buffer, image.Rectangle, image.Rectangle, WidgetStates, *Button, string, label.Align, font.Face)
-	ButtonSymbol     func(*command.Buffer, image.Rectangle, image.Rectangle, WidgetStates, *Button, label.SymbolType, font.Face)
-	ButtonImage      func(*command.Buffer, image.Rectangle, image.Rectangle, WidgetStates, *Button, *image.RGBA)
-	ButtonTextSymbol func(*command.Buffer, image.Rectangle, image.Rectangle, image.Rectangle, WidgetStates, *Button, string, label.SymbolType, font.Face)
-	ButtonTextImage  func(*command.Buffer, image.Rectangle, image.Rectangle, image.Rectangle, WidgetStates, *Button, string, font.Face, *image.RGBA)
+	ButtonText       func(*command.Buffer, image.Rectangle, image.Rectangle, WidgetStates, *Button, string, label.Align, font.Face) `json:"-"`
+	ButtonSymbol     func(*command.Buffer, image.Rectangle, image.Rectangle, WidgetStates, *Button, label.SymbolType, font.Face) `json:"-"`
+	ButtonImage      func(*command.Buffer, image.Rectangle, image.Rectangle, WidgetStates, *Button, *image.RGBA) `json:"-"`
+	ButtonTextSymbol func(*command.Buffer, image.Rectangle, image.Rectangle, image.Rectangle, WidgetStates, *Button, string, label.SymbolType, font.Face) `json:"-"`
+	ButtonTextImage  func(*command.Buffer, image.Rectangle, image.Rectangle, image.Rectangle, WidgetStates, *Button, string, font.Face, *image.RGBA) `json:"-"`
 }
 
 type Toggle struct {
@@ -145,14 +144,14 @@ type Toggle struct {
 	TextBackground color.RGBA
 	Padding        image.Point
 	TouchPadding   image.Point
-	DrawBegin      func(*command.Buffer)
+	DrawBegin      func(*command.Buffer) `json:"-"`
 	Draw           CustomToggleDrawing
-	DrawEnd        func(*command.Buffer)
+	DrawEnd        func(*command.Buffer) `json:"-"`
 }
 
 type CustomToggleDrawing struct {
-	Radio    func(*command.Buffer, WidgetStates, *Toggle, bool, image.Rectangle, image.Rectangle, image.Rectangle, string, font.Face)
-	Checkbox func(*command.Buffer, WidgetStates, *Toggle, bool, image.Rectangle, image.Rectangle, image.Rectangle, string, font.Face)
+	Radio    func(*command.Buffer, WidgetStates, *Toggle, bool, image.Rectangle, image.Rectangle, image.Rectangle, string, font.Face) `json:"-"`
+	Checkbox func(*command.Buffer, WidgetStates, *Toggle, bool, image.Rectangle, image.Rectangle, image.Rectangle, string, font.Face) `json:"-"`
 }
 
 type Selectable struct {
@@ -173,9 +172,9 @@ type Selectable struct {
 	Rounding          uint16
 	Padding           image.Point
 	TouchPadding      image.Point
-	DrawBegin         func(*command.Buffer)
-	Draw              func(*command.Buffer, WidgetStates, *Selectable, bool, image.Rectangle, string, label.Align, font.Face)
-	DrawEnd           func(*command.Buffer)
+	DrawBegin         func(*command.Buffer) `json:"-"`
+	Draw              func(*command.Buffer, WidgetStates, *Selectable, bool, image.Rectangle, string, label.Align, font.Face) `json:"-"`
+	DrawEnd           func(*command.Buffer) `json:"-"`
 }
 
 type Slider struct {
@@ -201,9 +200,9 @@ type Slider struct {
 	DecButton    Button
 	IncSymbol    label.SymbolType
 	DecSymbol    label.SymbolType
-	DrawBegin    func(*command.Buffer)
-	Draw         func(*command.Buffer, WidgetStates, *Slider, image.Rectangle, image.Rectangle, float64, float64, float64)
-	DrawEnd      func(*command.Buffer)
+	DrawBegin    func(*command.Buffer) `json:"-"`
+	Draw         func(*command.Buffer, WidgetStates, *Slider, image.Rectangle, image.Rectangle, float64, float64, float64) `json:"-"`
+	DrawEnd      func(*command.Buffer) `json:"-"`
 }
 
 type Progress struct {
@@ -215,9 +214,9 @@ type Progress struct {
 	CursorActive Item
 	Rounding     uint16
 	Padding      image.Point
-	DrawBegin    func(*command.Buffer)
-	Draw         func(*command.Buffer, WidgetStates, *Progress, image.Rectangle, image.Rectangle, int, int)
-	DrawEnd      func(*command.Buffer)
+	DrawBegin    func(*command.Buffer) `json:"-"`
+	Draw         func(*command.Buffer, WidgetStates, *Progress, image.Rectangle, image.Rectangle, int, int) `json:"-"`
+	DrawEnd      func(*command.Buffer) `json:"-"`
 }
 
 type Scrollbar struct {
@@ -236,9 +235,9 @@ type Scrollbar struct {
 	DecButton    Button
 	IncSymbol    label.SymbolType
 	DecSymbol    label.SymbolType
-	DrawBegin    func(*command.Buffer)
-	Draw         func(*command.Buffer, WidgetStates, *Scrollbar, image.Rectangle, image.Rectangle)
-	DrawEnd      func(*command.Buffer)
+	DrawBegin    func(*command.Buffer) `json:"-"`
+	Draw         func(*command.Buffer, WidgetStates, *Scrollbar, image.Rectangle, image.Rectangle) `json:"-"`
+	DrawEnd      func(*command.Buffer) `json:"-"`
 }
 
 type Edit struct {
@@ -281,9 +280,9 @@ type Property struct {
 	Edit        Edit
 	IncButton   Button
 	DecButton   Button
-	DrawBegin   func(*command.Buffer)
-	Draw        func(*command.Buffer, *Property, image.Rectangle, image.Rectangle, WidgetStates, string, font.Face)
-	DrawEnd     func(*command.Buffer)
+	DrawBegin   func(*command.Buffer) `json:"-"`
+	Draw        func(*command.Buffer, *Property, image.Rectangle, image.Rectangle, WidgetStates, string, font.Face) `json:"-"`
+	DrawEnd     func(*command.Buffer) `json:"-"`
 }
 
 type Chart struct {
