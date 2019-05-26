@@ -1,6 +1,8 @@
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/BurntSushi/xgb v0.0.0-20160522221800-27f122750802 h1:otE7gFP0KwnPTKtMvPLOcWDZxx6rXYyJGlrXbhoD7og=
 github.com/BurntSushi/xgb v0.0.0-20160522221800-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
+github.com/aarzilli/nucular v0.0.0-20190520165901-2ca4109375f4 h1:MBIo4uuMzK8qwZTSGxj870UW8Z3pVXGYw6VtAhIw1e4=
+github.com/aarzilli/nucular v0.0.0-20190520165901-2ca4109375f4/go.mod h1:kmRix5MpiU9CMTXlMppPUJ6FEza2no59rZZZWcF3xMU=
 github.com/golang/freetype v0.0.0-20161208064710-d9be45aaf745 h1:0d9whnMsm0iklqvoBXNEgHPt8pkXdfDplBAswA/F8YA=
 github.com/golang/freetype v0.0.0-20161208064710-d9be45aaf745/go.mod h1:E/TSTwGwJL78qG/PmXZO1EjYhfJinVAhrmmHX6Z8B9k=
 github.com/hashicorp/golang-lru v0.0.0-20160813221303-0a025b7e63ad h1:eMxs9EL0PvIGS9TTtxg4R+JxuPGav82J8rA+GFnY7po=

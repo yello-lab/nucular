@@ -11,9 +11,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/aarzilli/nucular/command"
-	"github.com/aarzilli/nucular/rect"
-	nstyle "github.com/aarzilli/nucular/style"
+	"github.com/yello-lab/nucular/command"
+	"github.com/yello-lab/nucular/rect"
+	nstyle "github.com/yello-lab/nucular/style"
 
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"

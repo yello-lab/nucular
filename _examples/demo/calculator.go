@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/aarzilli/nucular"
-	"github.com/aarzilli/nucular/label"
+	"github.com/yello-lab/nucular"
+	"github.com/yello-lab/nucular/label"
 )
 
 type calcDemo struct {

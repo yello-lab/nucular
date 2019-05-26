@@ -12,10 +12,10 @@ import (
 
 	"golang.org/x/mobile/event/mouse"
 
-	"github.com/aarzilli/nucular"
-	lbl "github.com/aarzilli/nucular/label"
-	"github.com/aarzilli/nucular/rect"
-	nstyle "github.com/aarzilli/nucular/style"
+	"github.com/yello-lab/nucular"
+	lbl "github.com/yello-lab/nucular/label"
+	"github.com/yello-lab/nucular/rect"
+	nstyle "github.com/yello-lab/nucular/style"
 )
 
 type styleEditor struct {

@@ -10,11 +10,11 @@ import (
 	"runtime/trace"
 	"time"
 
-	"github.com/aarzilli/nucular"
-	"github.com/aarzilli/nucular/label"
-	"github.com/aarzilli/nucular/rect"
-	nstyle "github.com/aarzilli/nucular/style"
-	"github.com/aarzilli/nucular/style-editor"
+	"github.com/yello-lab/nucular"
+	"github.com/yello-lab/nucular/label"
+	"github.com/yello-lab/nucular/rect"
+	nstyle "github.com/yello-lab/nucular/style"
+	"github.com/yello-lab/nucular/style-editor"
 	"github.com/golang/freetype"
 	"github.com/golang/freetype/truetype"
 

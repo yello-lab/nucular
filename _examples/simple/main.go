@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/aarzilli/nucular"
-	"github.com/aarzilli/nucular/style"
+	"github.com/yello-lab/nucular"
+	"github.com/yello-lab/nucular/style"
 )
 
 var count int

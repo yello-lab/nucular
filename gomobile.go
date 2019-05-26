@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/aarzilli/nucular/rect"
+	"github.com/yello-lab/nucular/rect"
 
 	"golang.org/x/mobile/app"
 	"golang.org/x/mobile/event/lifecycle"

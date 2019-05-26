@@ -4,9 +4,9 @@ import (
 	"image"
 	"image/color"
 	"sync"
-	"github.com/aarzilli/nucular/command"
-	"github.com/aarzilli/nucular/internal/assets"
-	"github.com/aarzilli/nucular/label"
+	"github.com/yello-lab/nucular/command"
+	"github.com/yello-lab/nucular/internal/assets"
+	"github.com/yello-lab/nucular/label"
 
 	"golang.org/x/image/font"
 

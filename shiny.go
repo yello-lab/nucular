@@ -11,8 +11,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/aarzilli/nucular/clipboard"
-	"github.com/aarzilli/nucular/rect"
+	"github.com/yello-lab/nucular/clipboard"
+	"github.com/yello-lab/nucular/rect"
 
 	"golang.org/x/exp/shiny/driver"
 	"golang.org/x/exp/shiny/screen"
