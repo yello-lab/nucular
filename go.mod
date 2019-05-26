@@ -1,4 +1,4 @@
-module github.com/aarzilli/nucular
+module github.com/yello-lab/nucular
 
 require (
 	github.com/BurntSushi/xgb v0.0.0-20160522221800-27f122750802
